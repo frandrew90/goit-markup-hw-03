@@ -321,6 +321,10 @@ p {
 
 /* Секция Команда */
 
+.team {
+  background-color: var(--secondary-bg-color);
+}
+
 .team-list {
   margin-left: calc(-1 * var(--card-set-gap));
 
@@ -350,7 +354,19 @@ p {
   margin-bottom: 30px;
 }
 
-/* exaples */
+/* Секция Примеры работ */
+.example{
+  text-align: center;
+}
+
+.filter-list{
+  margin-bottom: 34px;;
+}
+
+.filter-item{
+  display: inline-block;
+
+}
 
 .example-list .title {
   color: var(--title-text-color);
@@ -366,10 +382,6 @@ p {
 
   font-size: 16px;
   line-height: 1.87;
-}
-
-.team {
-  background-color: var(--secondary-bg-color);
 }
 
 /* футер */
