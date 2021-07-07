@@ -11,6 +11,8 @@
   --hero-bg-color: #2f303a;
   --footer-bg-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
+
+  --card-set-gap: 30px;
 }
 
 /* палитра текста */
@@ -205,12 +207,15 @@ p {
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
 }
 
 /* Hero */
@@ -220,6 +225,7 @@ p {
   padding-bottom: 200px;
 
   background-color: var(--hero-bg-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -235,7 +241,6 @@ p {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -249,8 +254,6 @@ p {
   padding-bottom: 8px;
   padding-left: 30px;
   padding-right: 30px;
-  
-  display: block;
 
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
@@ -270,7 +273,7 @@ p {
 } */
 
 .advantages-list {
-  margin-left: -30px;
+  margin-left: calc(-1 * var(--card-set-gap));
 
   font-size: 14px;
   line-height: 1.71;
@@ -279,9 +282,9 @@ p {
 }
 
 .advantages-item {
-margin-left: 30px;
+  margin-left: var(--card-set-gap);
 
-  flex-basis: calc((100% / 4) - 30px);
+  flex-basis: calc((100% / 4) - var(--card-set-gap));
 }
 
 
@@ -300,37 +303,51 @@ margin-left: 30px;
 
 .work{
   padding-top: 0;
-}
 
-.work-title {
-  margin-bottom: 50px;
+  text-align: center;
 }
 
 .work-list {
-  margin-left: -30px;
+  margin-left: calc(-1 * var(--card-set-gap));
 
   display: flex;
 }
 
 .work-item {
-margin-left: 30px;
+  margin-left: var(--card-set-gap);
 
-  flex-basis: calc((100% / 3) - 30px);
+  flex-basis: calc((100% / 3) - var(--card-set-gap));
 }
 
 /* Секция Команда */
 
 .team-list {
+  margin-left: calc(-1 * var(--card-set-gap));
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  display: flex;
+}
+
+.team-item {
+  margin-left: var(--card-set-gap);
+
+  flex-basis: calc((100% / 4) - var(--card-set-gap));
 }
 
 .team-list .title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
+}
+
+.team-list img {
+  margin-bottom: 30px;
 }
 
 /* exaples */
