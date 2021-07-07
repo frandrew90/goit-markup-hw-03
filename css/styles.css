@@ -375,6 +375,9 @@ p {
 /* футер */
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   color: var(--secondary-accent-color);
   background-color: var(--footer-bg-color);
 
@@ -383,13 +386,22 @@ p {
 }
 
 .page-footer .logo {
+  margin-bottom: 20px;
+  margin-right: 0;
+
   color: inherit;
 }
 
 .page-footer address {
+  margin-bottom: 9px;
+
   font-style: normal;
 }
 
 .footer-contacts .link {
   color: var(--footer-link-color);
+}
+
+.footer-contacts-item:not(:last-child){
+  margin-bottom: 9px;
 }
