@@ -262,14 +262,32 @@ p {
   letter-spacing: 0.06em;
 }
 
-/* advantages */
+/* Секция преймущества */
+
+/* .advantages {
+  outline: 2px solid tomato;
+  background-color: rgb(131, 71, 71);
+} */
 
 .advantages-list {
+  margin-left: -30px;
+
   font-size: 14px;
   line-height: 1.71;
+
+  display: flex;
 }
 
+.advantages-item {
+margin-left: 30px;
+
+  flex-basis: calc((100% / 4) - 30px);
+}
+
+
 .advantages-list-title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -278,7 +296,7 @@ p {
   text-transform: uppercase;
 }
 
-/* team */
+/* Секция Команда */
 
 .team-list {
   font-size: 16px;
