@@ -358,22 +358,28 @@ p {
 }
 
 /* Секция Примеры работ */
-.example {
+/* .example {
   text-align: center;
-}
+} */
 
 .filter-list {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-.filter-item {
-  display: inline-block;
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Карточки секции Примеры */
 
-.card-thumb > img {
+/* .card-thumb > img {
   margin-bottom: 20px;
+} */
+
+.card-thumb-text {
+  padding: 20px 24px;
 }
 
 .example-list .title {
