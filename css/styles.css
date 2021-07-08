@@ -348,8 +348,13 @@ p {
   font-weight: 500;
 }
 
-.team-list img {
+/* .team-list img {
   margin-bottom: 30px;
+} */
+
+.team-card-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Секция Примеры работ */
