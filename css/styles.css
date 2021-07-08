@@ -363,6 +363,8 @@ p {
   display: inline-block;
 }
 
+/* Карточки секции Примеры */
+
 .card-thumb > img {
   margin-bottom: 20px;
 }
@@ -376,6 +378,7 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: left;
 }
 
 .example-list .description {
@@ -383,9 +386,8 @@ p {
 
   font-size: 16px;
   line-height: 1.87;
+  text-align: left;
 }
-
-/* Карточки секции Примеры */
 
 .example-list {
   margin-right: calc(-1 * var(--card-set-gap));
