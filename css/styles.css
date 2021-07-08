@@ -370,9 +370,9 @@ img {
 }
 
 /* Секция Примеры работ */
-/* .example {
-  text-align: center;
-} */
+.example {
+  background-color: var(--header-bg-color);
+}
 
 .filter-list {
   margin-bottom: 50px;
