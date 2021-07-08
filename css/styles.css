@@ -59,10 +59,10 @@ body {
 
 /* Списки */
 .list {
-  list-style: none;
-
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 /* сброс */
@@ -127,19 +127,18 @@ p {
   background-color: var(--secondary-accent-color);
 }
 
-.site-nav{
+.site-nav {
   display: flex;
   align-items: center;
 }
 
-.header-box{
+.header-box {
   display: flex;
   align-items: center;
 }
 
 .logo {
   margin-right: 93px;
-  display: inline-block
 
   color: var(--logo-color);
 
@@ -167,7 +166,6 @@ p {
 
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
-
 }
 
 .site-nav-list .current {
@@ -215,7 +213,6 @@ p {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-
 }
 
 /* Hero */
@@ -287,7 +284,6 @@ p {
   flex-basis: calc((100% / 4) - var(--card-set-gap));
 }
 
-
 .advantages-list-title {
   margin-bottom: 10px;
 
@@ -301,7 +297,7 @@ p {
 
 /* Секция Чем мы занимаемся */
 
-.work{
+.work {
   padding-top: 0;
 
   text-align: center;
@@ -355,20 +351,25 @@ p {
 }
 
 /* Секция Примеры работ */
-.example{
+.example {
   text-align: center;
 }
 
-.filter-list{
-  margin-bottom: 34px;;
+.filter-list {
+  margin-bottom: 34px;
 }
 
-.filter-item{
+.filter-item {
   display: inline-block;
+}
 
+.card-thumb > img {
+  margin-bottom: 20px;
 }
 
 .example-list .title {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -382,6 +383,26 @@ p {
 
   font-size: 16px;
   line-height: 1.87;
+}
+
+/* Карточки секции Примеры */
+
+.example-list {
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-item {
+  margin-right: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+  flex-basis: calc((100% / 3) - var(--card-set-gap));
+}
+
+.card-thumb {
+  border-bottom: 1px solid #eeeeee;
 }
 
 /* футер */
@@ -414,6 +435,6 @@ p {
   color: var(--footer-link-color);
 }
 
-.footer-contacts-item:not(:last-child){
+.footer-contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
