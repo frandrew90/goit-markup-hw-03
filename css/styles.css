@@ -6,11 +6,13 @@
   --logo-color: #000000;
   --footer-link-color: rgba(255, 255, 255, 0.6);
 
-  --primary-bg-color: #e5e5e5;
+  /* --primary-bg-color: #e5e5e5; */
   --header-bg-color: #ffffff;
   --hero-bg-color: #2f303a;
   --footer-bg-color: #2f303a;
-  --secondary-bg-color: #f5f4fa;
+  /* --secondary-bg-color: #f5f4fa; */
+  --primary-bg-color: #f5f4fa;
+  --secondary-bg-color: #e5e5e5;
 
   --card-set-gap: 30px;
 }
@@ -97,7 +99,7 @@ p {
   padding: 4px 20px;
 
   color: var(--title-text-color);
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
 
   font-family: inherit;
   font-weight: 500;
@@ -116,6 +118,15 @@ p {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  background-color: #188ce8;
+}
+
+img {
+  display: block;
 }
 
 /* HEADER */
@@ -355,6 +366,7 @@ p {
 .team-card-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--header-bg-color);
 }
 
 /* Секция Примеры работ */
@@ -380,6 +392,8 @@ p {
 
 .card-thumb-text {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .example-list .title {
@@ -403,7 +417,7 @@ p {
 }
 
 .example-list {
-  margin-right: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
   margin-bottom: calc(-1 * var(--card-set-gap));
 
   display: flex;
@@ -411,14 +425,14 @@ p {
 }
 
 .example-item {
-  margin-right: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
   flex-basis: calc((100% / 3) - var(--card-set-gap));
 }
 
-.card-thumb {
-  border-bottom: 1px solid #eeeeee;
-}
+/* .card-thumb {
+  border: 1px solid #eeeeee;
+} */
 
 /* футер */
 
@@ -436,6 +450,7 @@ p {
 .page-footer .logo {
   margin-bottom: 20px;
   margin-right: 0;
+  display: inline-block;
 
   color: inherit;
 }
