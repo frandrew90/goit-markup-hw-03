@@ -94,7 +94,7 @@ p {
 }
 
 .button.filter {
-  padding: 6px 22px;
+  padding: 4px 20px;
 
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
